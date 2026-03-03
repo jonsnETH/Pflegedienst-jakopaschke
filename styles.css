@@ -380,6 +380,94 @@ ul, ol { list-style: none; }
   display: block;
   width: 100%;
   height: auto;
+  position: relative;
+  z-index: 1;
+}
+
+/* ── Depth glows behind blob images ──────────────────────────── */
+.hero-visual,
+.trust-visual,
+.ablauf-visual {
+  position: relative;
+  isolation: isolate;
+}
+
+/* Hero: teal upper-right + warm red lower-left */
+.hero-visual::before {
+  content: "";
+  position: absolute;
+  width: 72%;
+  height: 72%;
+  top: -8%;
+  right: -6%;
+  background: radial-gradient(circle, rgba(15,118,110,0.18) 0%, transparent 70%);
+  filter: blur(48px);
+  border-radius: 50%;
+  z-index: 0;
+}
+.hero-visual::after {
+  content: "";
+  position: absolute;
+  width: 52%;
+  height: 52%;
+  bottom: 2%;
+  left: -4%;
+  background: radial-gradient(circle, rgba(185,28,28,0.10) 0%, transparent 70%);
+  filter: blur(56px);
+  border-radius: 50%;
+  z-index: 0;
+}
+
+/* Über uns (teal-50 bg): warm red upper + teal lower */
+.trust-visual::before {
+  content: "";
+  position: absolute;
+  width: 68%;
+  height: 68%;
+  top: -6%;
+  left: -6%;
+  background: radial-gradient(circle, rgba(185,28,28,0.09) 0%, transparent 70%);
+  filter: blur(52px);
+  border-radius: 50%;
+  z-index: 0;
+}
+.trust-visual::after {
+  content: "";
+  position: absolute;
+  width: 55%;
+  height: 55%;
+  bottom: -4%;
+  right: -4%;
+  background: radial-gradient(circle, rgba(15,118,110,0.14) 0%, transparent 70%);
+  filter: blur(44px);
+  border-radius: 50%;
+  z-index: 0;
+}
+
+/* Ablauf (off-white bg): teal upper-left + warm lower-right */
+.ablauf-visual::before {
+  content: "";
+  position: absolute;
+  width: 65%;
+  height: 65%;
+  top: -6%;
+  left: -5%;
+  background: radial-gradient(circle, rgba(15,118,110,0.14) 0%, transparent 70%);
+  filter: blur(48px);
+  border-radius: 50%;
+  z-index: 0;
+}
+.ablauf-visual::after {
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  bottom: -4%;
+  right: -4%;
+  background: radial-gradient(circle, rgba(185,28,28,0.08) 0%, transparent 70%);
+  filter: blur(52px);
+  border-radius: 50%;
+  z-index: 0;
 }
 
 /* Hero layout: left text / right image */
