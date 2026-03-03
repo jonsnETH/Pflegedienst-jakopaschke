@@ -375,6 +375,13 @@ ul, ol { list-style: none; }
 }
 
 
+/* Hero blob image — pre-shaped PNG, no CSS mask needed */
+.hero-blob-img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 /* Hero layout: left text / right image */
 .hero-layout {
   position: relative;
