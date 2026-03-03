@@ -482,7 +482,7 @@ ul, ol { list-style: none; }
 }
 @media (max-width: 767px) {
   .hero-layout { grid-template-columns: 1fr; gap: 40px; }
-  .hero-visual  { order: -1; max-width: 420px; margin-inline: auto; }
+  .hero-visual  { max-width: 420px; margin-inline: auto; }
 }
 
 /* Content */
