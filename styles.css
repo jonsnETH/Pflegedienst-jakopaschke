@@ -546,14 +546,19 @@ ul, ol { list-style: none; }
   position: absolute;
   inset: -14px 14px 14px -14px;
   background: var(--teal-50);
-  border-radius: 30% 70% 60% 40% / 40% 30% 70% 60%;
+  border-radius: 50% 50% 45% 55% / 45% 55% 45% 55%;
   z-index: -1;
 }
 /*
-  Rounded hexagon mask — irregular, slightly tilted, each corner a different radius.
-  viewBox 200×250 matches the 4/5 aspect-ratio so it stretches correctly.
-  Path:  6 vertices with Q (quadratic bezier) corners of varying size.
-  drop-shadow follows the polygon outline instead of the bounding box.
+  Portrait Union blob — two overlapping rounded lobes with a concave neck,
+  inspired by the Union.svg reference. 400×500 grid matches the 4:5 aspect-ratio.
+
+  Structure:
+  - Small lobe: upper-left (x 32–292, y 10–242)
+  - Large lobe: lower-right (x 72–396, y 242–498)
+  - Concave S-curve neck at mid-height creates the characteristic Union "bite"
+  - Diagonal lean (upper-left → lower-right) gives strong visual dynamism
+  - No axis of symmetry — obviously not a circle or oval
 */
 .blob-img {
   display: block;
@@ -561,8 +566,8 @@ ul, ol { list-style: none; }
   aspect-ratio: 4/5;
   object-fit: cover;
   border-radius: 0;
-  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 250'%3E%3Cpath d='M 81 28 Q 110 8 138 30 L 174 58 Q 190 70 189 90 L 184 160 Q 182 190 157 207 L 116 234 Q 95 248 75 234 L 37 207 Q 12 190 14 160 L 17 92 Q 18 70 36 58 Z' fill='black'/%3E%3C/svg%3E");
-          mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 250'%3E%3Cpath d='M 81 28 Q 110 8 138 30 L 174 58 Q 190 70 189 90 L 184 160 Q 182 190 157 207 L 116 234 Q 95 248 75 234 L 37 207 Q 12 190 14 160 L 17 92 Q 18 70 36 58 Z' fill='black'/%3E%3C/svg%3E");
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 500'%3E%3Cpath d='M 148 10 C 220 5 290 55 292 118 C 294 175 275 210 268 242 C 262 268 295 295 338 322 C 375 345 396 388 390 435 C 384 475 350 498 305 498 C 262 498 215 488 180 468 C 142 448 95 415 72 372 C 48 330 52 275 82 252 C 108 232 118 192 102 162 C 88 138 62 108 48 78 C 32 52 65 12 148 10 Z' fill='black'/%3E%3C/svg%3E");
+          mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 500'%3E%3Cpath d='M 148 10 C 220 5 290 55 292 118 C 294 175 275 210 268 242 C 262 268 295 295 338 322 C 375 345 396 388 390 435 C 384 475 350 498 305 498 C 262 498 215 488 180 468 C 142 448 95 415 72 372 C 48 330 52 275 82 252 C 108 232 118 192 102 162 C 88 138 62 108 48 78 C 32 52 65 12 148 10 Z' fill='black'/%3E%3C/svg%3E");
   -webkit-mask-size: 100% 100%;
           mask-size: 100% 100%;
   filter: drop-shadow(0 20px 48px rgba(0,0,0,0.12)) drop-shadow(0 4px 14px rgba(15,118,110,0.09));
