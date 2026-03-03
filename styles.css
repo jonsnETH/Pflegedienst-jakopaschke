@@ -546,16 +546,26 @@ ul, ol { list-style: none; }
   position: absolute;
   inset: -14px 14px 14px -14px;
   background: var(--teal-50);
-  border-radius: 58% 42% 52% 48% / 54% 48% 52% 46%;
+  border-radius: 30% 70% 60% 40% / 40% 30% 70% 60%;
   z-index: -1;
 }
+/*
+  Rounded hexagon mask — irregular, slightly tilted, each corner a different radius.
+  viewBox 200×250 matches the 4/5 aspect-ratio so it stretches correctly.
+  Path:  6 vertices with Q (quadratic bezier) corners of varying size.
+  drop-shadow follows the polygon outline instead of the bounding box.
+*/
 .blob-img {
   display: block;
   width: 100%;
   aspect-ratio: 4/5;
   object-fit: cover;
-  border-radius: 62% 38% 46% 54% / 60% 44% 56% 40%;
-  box-shadow: 0 24px 64px rgba(0,0,0,0.10), 0 4px 16px rgba(15,118,110,0.08);
+  border-radius: 0;
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 250'%3E%3Cpath d='M 81 28 Q 110 8 138 30 L 174 58 Q 190 70 189 90 L 184 160 Q 182 190 157 207 L 116 234 Q 95 248 75 234 L 37 207 Q 12 190 14 160 L 17 92 Q 18 70 36 58 Z' fill='black'/%3E%3C/svg%3E");
+          mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 250'%3E%3Cpath d='M 81 28 Q 110 8 138 30 L 174 58 Q 190 70 189 90 L 184 160 Q 182 190 157 207 L 116 234 Q 95 248 75 234 L 37 207 Q 12 190 14 160 L 17 92 Q 18 70 36 58 Z' fill='black'/%3E%3C/svg%3E");
+  -webkit-mask-size: 100% 100%;
+          mask-size: 100% 100%;
+  filter: drop-shadow(0 20px 48px rgba(0,0,0,0.12)) drop-shadow(0 4px 14px rgba(15,118,110,0.09));
 }
 
 /* ── Section heading ─────────────────────────────────────────── */
