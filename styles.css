@@ -387,14 +387,14 @@ ul, ol { list-style: none; }
   position: relative;
   z-index: 1;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 64px;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 48px;
   align-items: center;
   width: 100%;
 }
 @media (max-width: 767px) {
-  .hero-layout { grid-template-columns: 1fr; gap: 48px; }
-  .hero-visual  { order: -1; max-width: 340px; margin-inline: auto; }
+  .hero-layout { grid-template-columns: 1fr; gap: 40px; }
+  .hero-visual  { order: -1; max-width: 420px; margin-inline: auto; }
 }
 
 /* Content */
