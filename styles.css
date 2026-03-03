@@ -897,6 +897,11 @@ ul, ol { list-style: none; }
 @media (min-width: 768px) {
   .trust-split { grid-template-columns: 1fr 1fr; gap: 64px; align-items: center; }
 }
+.trust-split--no-image {
+  grid-template-columns: 1fr;
+  max-width: 720px;
+  margin-inline: auto;
+}
 .trust-stats {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -917,8 +922,8 @@ ul, ol { list-style: none; }
   margin-bottom: 6px;
 }
 .trust-stat__label { font-size: 13px; color: var(--gray-500); line-height: 1.4; }
-.trust-text .section-label { text-align: left; }
-.trust-text .section-heading { text-align: left; }
+.trust-split--no-image .trust-text .section-label  { text-align: center; }
+.trust-split--no-image .trust-text .section-heading { text-align: center; }
 .trust-text .trust-stats { margin-bottom: 28px; }
 .trust-text .trust-stat { padding: 16px 20px; }
 .trust-text p { font-size: 16px; color: var(--gray-700); line-height: 1.7; margin-bottom: 20px; }
