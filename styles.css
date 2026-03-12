@@ -691,7 +691,7 @@ ul, ol { list-style: none; }
   .hero { grid-template-columns: 1fr; grid-template-rows: auto 100vw; height: auto; }
   .hero-left { padding: 40px 24px; clip-path: none; }
   .hero-left .hero-content { max-width: 100%; margin-left: 0; }
-  .hero-left .btn-outline { background: var(--red); color: #fff; border-color: var(--red); }
+
   .hero-right { border-radius: 20px; margin: 0 16px 16px; }
   .hero-img-base  { object-position: center 10%; }
   .hero-img-hover { object-position: center 5%; }
