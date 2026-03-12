@@ -65,7 +65,8 @@
     const inners  = Array.from(mark.querySelectorAll('.cls-1'));
 
     const getLen = el => { try { return el.getTotalLength() || 0; } catch { return 0; } };
-    const cLen = getLen(circle) || 503;
+    const r    = parseFloat(circle && circle.getAttribute('r')) || 80;
+    const cLen = 2 * Math.PI * r + 4;
     const dLen = getLen(divider) || 170;
 
     const clamp  = (v, lo, hi) => Math.max(lo, Math.min(hi, v));
@@ -200,6 +201,22 @@
     revealEls.forEach(el => ioReveal.observe(el));
   } else {
     document.querySelectorAll('.reveal').forEach(el => el.classList.add('is-in'));
+  }
+
+  // ── Blog TOC active state ─────────────────────────────────────
+  const tocLinks = document.querySelectorAll('.blog-toc nav a');
+  if (tocLinks.length) {
+    const headings = Array.from(tocLinks).map(a => document.querySelector(a.getAttribute('href')));
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          tocLinks.forEach(a => a.classList.remove('toc-active'));
+          const active = document.querySelector(`.blog-toc nav a[href="#${entry.target.id}"]`);
+          if (active) active.classList.add('toc-active');
+        }
+      });
+    }, { rootMargin: '-80px 0px -60% 0px' });
+    headings.forEach(h => { if (h) observer.observe(h); });
   }
 
 })();
