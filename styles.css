@@ -685,8 +685,8 @@ ul, ol { list-style: none; }
 }
 
 @media (max-width: 767px) {
-  .hero { grid-template-columns: 1fr; grid-template-rows: auto 85vw; height: auto; }
-  .hero-left { padding: 60px 24px; margin-right: 0; border-radius: 0; }
+  .hero { grid-template-columns: 1fr; grid-template-rows: auto 100vw; height: auto; }
+  .hero-left { padding: 40px 24px; margin-right: 0; border-radius: 0; }
   .hero-left .hero-content { max-width: 100%; margin-left: 0; }
   .hero-right { border-radius: 20px; margin: 0 16px 16px; }
   .hero-img-base  { object-position: center 10%; }
@@ -879,8 +879,7 @@ ul, ol { list-style: none; }
 .trust-sep { width: 1px; height: 12px; background: var(--gray-200); }
 @media (max-width: 479px) { .trust-sep { display: none; } }
 
-/* Mobile padding so dock doesn't cover hero CTA */
-@media (max-width: 767px) { .hero { padding-bottom: 120px; } }
+/* Mobile: no extra bottom padding on hero */
 
 /* ── Blob image mask ──────────────────────────────────────────── */
 .blob-wrap {
