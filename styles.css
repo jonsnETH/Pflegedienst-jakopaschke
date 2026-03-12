@@ -389,6 +389,7 @@ ul, ol { list-style: none; }
   grid-template-columns: 1fr 1fr;
   height: calc(100vh - var(--nav-h));
   overflow: hidden;
+  position: relative;
 }
 
 /* ── Animated gradient mesh ──────────────────────────────────── */
@@ -604,8 +605,7 @@ ul, ol { list-style: none; }
   align-items: center;
   padding: 100px max(calc((100vw - 1440px) / 2 + 80px), 32px) 100px max(calc((100vw - 1440px) / 2 + 80px), 32px);
   overflow: hidden;
-  border-radius: 0 24px 24px 0;
-  margin-right: -24px;
+  clip-path: inset(0 0 0 0 round 0 24px 24px 0);
   z-index: 1;
 }
 
@@ -619,6 +619,9 @@ ul, ol { list-style: none; }
 .hero-right {
   position: relative;
   overflow: hidden;
+}
+@media (min-width: 768px) {
+  .hero-right { margin-left: -24px; }
 }
 
 .hero-right img {
@@ -686,7 +689,7 @@ ul, ol { list-style: none; }
 
 @media (max-width: 767px) {
   .hero { grid-template-columns: 1fr; grid-template-rows: auto 100vw; height: auto; }
-  .hero-left { padding: 40px 24px; margin-right: 0; border-radius: 0; }
+  .hero-left { padding: 40px 24px; clip-path: none; }
   .hero-left .hero-content { max-width: 100%; margin-left: 0; }
   .hero-right { border-radius: 20px; margin: 0 16px 16px; }
   .hero-img-base  { object-position: center 10%; }
