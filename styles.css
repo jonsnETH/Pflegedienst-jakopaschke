@@ -290,6 +290,7 @@ ul, ol { list-style: none; }
 .dock-btn svg { width: 16px; height: 16px; flex-shrink: 0; }
 .dock-btn--primary { background: var(--red); color: #fff; }
 .dock-btn--secondary { background: var(--gray-100); color: var(--gray-700); border: 1px solid var(--border); }
+.dock-btn--email { background: var(--teal); color: #fff; }
 .dock-btn--whatsapp { background: #25d366; color: #fff; }
 
 /* ── WhatsApp FAB ────────────────────────────────────────────── */
@@ -690,6 +691,7 @@ ul, ol { list-style: none; }
   .hero { grid-template-columns: 1fr; grid-template-rows: auto 100vw; height: auto; }
   .hero-left { padding: 40px 24px; clip-path: none; }
   .hero-left .hero-content { max-width: 100%; margin-left: 0; }
+  .hero-left .btn-outline { background: var(--red); color: #fff; border-color: var(--red); }
   .hero-right { border-radius: 20px; margin: 0 16px 16px; }
   .hero-img-base  { object-position: center 10%; }
   .hero-img-hover { object-position: center 5%; }
