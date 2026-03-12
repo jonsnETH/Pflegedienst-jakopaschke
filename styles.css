@@ -685,9 +685,12 @@ ul, ol { list-style: none; }
 }
 
 @media (max-width: 767px) {
-  .hero { grid-template-columns: 1fr; grid-template-rows: auto 56vw; height: auto; }
+  .hero { grid-template-columns: 1fr; grid-template-rows: auto 85vw; height: auto; }
   .hero-left { padding: 60px 24px; margin-right: 0; border-radius: 0; }
   .hero-left .hero-content { max-width: 100%; margin-left: 0; }
+  .hero-right { border-radius: 20px; margin: 0 16px 16px; }
+  .hero-img-base  { object-position: center 10%; }
+  .hero-img-hover { object-position: center 5%; }
   .hero-img-card { bottom: 16px; left: 16px; }
 }
 
