@@ -603,7 +603,7 @@ ul, ol { list-style: none; }
   background: var(--teal-50);
   display: flex;
   align-items: center;
-  padding: 100px max(calc((100vw - 1440px) / 2 + 80px), 32px) 100px max(calc((100vw - 1440px) / 2 + 80px), 32px);
+  padding: 100px 48px 100px max(calc((100vw - 1440px) / 2 + 80px), 48px);
   overflow: hidden;
   clip-path: inset(0 0 0 0 round 0 24px 24px 0);
   z-index: 1;
@@ -611,7 +611,6 @@ ul, ol { list-style: none; }
 
 .hero-left .hero-content {
   max-width: 520px;
-  margin-left: auto;
   width: 100%;
 }
 
@@ -621,7 +620,7 @@ ul, ol { list-style: none; }
   overflow: hidden;
 }
 @media (min-width: 768px) {
-  .hero-right { margin-left: -24px; }
+  .hero-right { margin-left: -24px; width: calc(100% + 24px); }
 }
 
 .hero-right img {
