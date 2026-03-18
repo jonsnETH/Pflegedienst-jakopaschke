@@ -333,20 +333,17 @@ ul, ol { list-style: none; }
 @media (min-width: 768px) {
   .footer-grid { grid-template-columns: 1fr 1fr 1fr; gap: 24px; }
 }
-.footer-brand__name {
-  font-size: 15px;
-  font-weight: 700;
-  color: #fff;
-  letter-spacing: -0.01em;
+.footer-logo {
+  display: block;
+  margin-bottom: 4px;
 }
-.footer-brand__sub {
-  font-size: 11px;
-  font-weight: 500;
-  color: rgba(255,255,255,0.4);
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  margin-top: 3px;
+.footer-logo .logo-svg {
+  width: 180px;
+  height: auto;
+  display: block;
 }
+.footer-logo .logo-svg .cls-1 { fill: #fff; }
+.footer-logo .logo-svg .cls-2 { stroke: #fff; }
 .footer-brand__tagline {
   margin-top: 16px;
   font-size: 13px;
