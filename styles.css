@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+
 /* ── Design Tokens ─────────────────────────────────────────── */
 :root {
   --white:       #ffffff;
@@ -344,6 +346,10 @@ ul, ol { list-style: none; }
 }
 .footer-logo .logo-svg .cls-1 { fill: #fff; }
 .footer-logo .logo-svg .cls-2 { stroke: #fff; }
+.brand-name,
+.footer-brand__name {
+  font-family: 'Libre Baskerville', serif;
+}
 .footer-brand__tagline {
   margin-top: 16px;
   font-size: 13px;
