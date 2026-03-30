@@ -89,10 +89,12 @@
     wmBottom.style.opacity = 0; wmBottom.style.filter = 'blur(8px)'; wmBottom.style.transform = 'translateX(10px)';
 
     // One-shot animation: maps elapsed ms to progress 0-100, capped at 60
-    const BUILD_MS = 2800;
-    const HOLD_MS  = 1200;
+    const BUILD_MS   = 2800;
+    const TAGLINE_MS = 700;
+    const HOLD_MS    = 800;
     let startTime = null;
-    let phase = 'build'; // 'build' | 'hold' | 'done'
+    let phase = 'build'; // 'build' | 'tagline' | 'hold'
+    const taglineEl = intro.querySelector('.intro-tagline');
 
     const tick = now => {
       if (!startTime) startTime = now;
@@ -114,9 +116,12 @@
           if (divider) { divider.style.opacity = 1; divider.style.strokeDashoffset = 0; }
           inners.forEach(el => { el.style.opacity = 1; el.style.transform = 'scale(1)'; });
           [wmTop, wmBottom].forEach(g => { g.style.opacity=1; g.style.filter='blur(0)'; g.style.transform='translateX(0)'; });
-          phase = 'hold';
+          if (taglineEl) taglineEl.classList.add('is-visible');
+          phase = 'tagline';
           startTime = now;
         }
+      } else if (phase === 'tagline') {
+        if (elapsed >= TAGLINE_MS) { phase = 'hold'; startTime = now; }
       } else if (phase === 'hold') {
         if (elapsed >= HOLD_MS) { finishIntro(); return; }
       }

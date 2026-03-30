@@ -86,11 +86,26 @@ ul, ol { list-style: none; }
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  transition: opacity 0.7s cubic-bezier(0.4,0,0.2,1);
+  transition: transform 0.75s cubic-bezier(0.4,0,0.2,1), opacity 0.75s ease;
 }
 #intro.is-done {
+  transform: translateY(-100%);
   opacity: 0;
   pointer-events: none;
+}
+.intro-tagline {
+  font-family: 'Libre Baskerville', serif;
+  font-size: clamp(14px, 2vw, 20px);
+  color: var(--gray-400);
+  letter-spacing: 0.04em;
+  margin-top: 28px;
+  opacity: 0;
+  transform: translateY(8px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+.intro-tagline.is-visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 .intro-logo {
   width: clamp(200px, 52vw, 560px);
@@ -153,7 +168,7 @@ ul, ol { list-style: none; }
   flex-shrink: 0;
 }
 .nav-logo {
-  height: 34px;
+  height: 37px;
   width: auto;
 }
 
@@ -244,6 +259,38 @@ ul, ol { list-style: none; }
 .section--teal { background: var(--teal-50); }
 .section--dark { background: var(--gray-900); color: #fff; }
 
+/* Subtle red curve background for steps + faq sections */
+#ablauf,
+#faq {
+  position: relative;
+  overflow: hidden;
+}
+#ablauf::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 560'%3E%3Cdefs%3E%3Cpattern id='dots' x='0' y='0' width='20' height='20' patternUnits='userSpaceOnUse'%3E%3Ccircle cx='2' cy='2' r='1.5' fill='%23ef4444'/%3E%3C/pattern%3E%3ClinearGradient id='fade' x1='0' y1='0' x2='1' y2='0'%3E%3Cstop offset='0%25' stop-color='white' stop-opacity='1'/%3E%3Cstop offset='50%25' stop-color='white' stop-opacity='0'/%3E%3C/linearGradient%3E%3Cmask id='m'%3E%3Crect width='1440' height='560' fill='url(%23fade)'/%3E%3C/mask%3E%3C/defs%3E%3Crect width='1440' height='560' fill='url(%23dots)' mask='url(%23m)' opacity='0.45'/%3E%3C/svg%3E");
+  background-size: cover;
+  background-position: center;
+  pointer-events: none;
+  z-index: 0;
+}
+#faq::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 560'%3E%3Cdefs%3E%3Cpattern id='dots2' x='0' y='0' width='20' height='20' patternUnits='userSpaceOnUse'%3E%3Ccircle cx='2' cy='2' r='1.5' fill='%23ef4444'/%3E%3C/pattern%3E%3ClinearGradient id='fade2' x1='0' y1='1' x2='0' y2='0.5'%3E%3Cstop offset='0%25' stop-color='white' stop-opacity='1'/%3E%3Cstop offset='100%25' stop-color='white' stop-opacity='0'/%3E%3C/linearGradient%3E%3Cmask id='m2'%3E%3Crect width='1440' height='560' fill='url(%23fade2)'/%3E%3C/mask%3E%3C/defs%3E%3Crect width='1440' height='560' fill='url(%23dots2)' mask='url(%23m2)' opacity='0.45'/%3E%3C/svg%3E");
+  background-size: cover;
+  background-position: center;
+  pointer-events: none;
+  z-index: 0;
+}
+#ablauf > *,
+#faq > * {
+  position: relative;
+  z-index: 1;
+}
+
 /* ── Scroll reveal ──────────────────────────────────────────── */
 .reveal {
   opacity: 0;
@@ -291,7 +338,7 @@ ul, ol { list-style: none; }
 .dock-btn:active { opacity: 0.8; }
 .dock-btn svg { width: 16px; height: 16px; flex-shrink: 0; }
 .dock-btn--primary { background: var(--red); color: #fff; }
-.dock-btn--secondary { background: var(--gray-100); color: var(--gray-700); border: 1px solid var(--border); }
+.dock-btn--secondary { background: var(--red); color: #fff; }
 .dock-btn--email { background: var(--teal); color: #fff; }
 .dock-btn--whatsapp { background: #25d366; color: #fff; }
 
@@ -843,15 +890,15 @@ ul, ol { list-style: none; }
 .btn-outline:active { transform: translateY(0); }
 
 .hero-ctas .btn-outline {
-  background: #fff;
-  border-color: #fff;
-  color: var(--teal-dark);
+  background: var(--red);
+  border-color: var(--red);
+  color: #fff;
   transition: border-color 0.15s, background 0.15s, color 0.15s, transform 0.12s;
 }
 .hero-ctas .btn-outline:hover {
-  background: #f0fdfa;
-  border-color: #f0fdfa;
-  color: var(--teal);
+  background: var(--red-dark);
+  border-color: var(--red-dark);
+  color: #fff;
   transform: translateY(-2px);
 }
 .hero-ctas .btn-outline:active { transform: translateY(0); }
