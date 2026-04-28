@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ambulante Pflege Ludwigsfelde | Pflegedienst Jakopaschke² GmbH</title>
-  <meta name="description" content="Ambulanter Pflegedienst in Ludwigsfelde. Häusliche Pflege nach SGB V & XI – abgerechnet über Ihre Kasse. 24h Rufbereitschaft. Jetzt Beratung anfragen.">
+  <meta name="description" content="Ambulanter Pflegedienst in Ludwigsfelde, Großbeeren, Stahnsdorf, Trebbin und Teltow-Fläming. Häusliche Pflege nach SGB V & XI – abgerechnet über Ihre Kasse. 24h Rufbereitschaft.">
 
   <!-- Canonical & language -->
   <link rel="canonical" href="https://www.pflegedienst-jakopaschke.de/">
@@ -20,7 +20,7 @@
   <meta property="og:type" content="website">
   <meta property="og:locale" content="de_DE">
   <meta property="og:title" content="Ambulante Pflege Ludwigsfelde | Pflegedienst Jakopaschke² GmbH">
-  <meta property="og:description" content="Ambulanter Pflegedienst in Ludwigsfelde. Häusliche Pflege nach SGB V & XI – abgerechnet über Ihre Kasse. 24h Rufbereitschaft.">
+  <meta property="og:description" content="Ambulanter Pflegedienst in Ludwigsfelde, Großbeeren, Stahnsdorf, Trebbin und Teltow-Fläming. Häusliche Pflege nach SGB V & XI – abgerechnet über Ihre Kasse. 24h Rufbereitschaft.">
   <meta property="og:url" content="https://www.pflegedienst-jakopaschke.de/">
   <meta property="og:site_name" content="Pflegedienst Jakopaschke² GmbH">
   <meta property="og:image" content="https://www.pflegedienst-jakopaschke.de/img/hero-nurse.jpg">
@@ -53,7 +53,17 @@
           "longitude": 13.2656
         },
         "areaServed": [
-          { "@type": "City", "name": "Ludwigsfelde" }
+          { "@type": "City",        "name": "Ludwigsfelde",           "postalCode": "14974" },
+          { "@type": "City",        "name": "Großbeeren",             "postalCode": "14974" },
+          { "@type": "Locality",    "name": "Glienick",               "postalCode": "15806" },
+          { "@type": "Locality",    "name": "Schünow",                "postalCode": "15806" },
+          { "@type": "Locality",    "name": "Nunsdorf",               "postalCode": "15806" },
+          { "@type": "Locality",    "name": "Christinendorf",         "postalCode": "14959" },
+          { "@type": "Locality",    "name": "Großbeuthen",            "postalCode": "14959" },
+          { "@type": "Locality",    "name": "Märkisch Wilmersdorf",   "postalCode": "14959" },
+          { "@type": "Locality",    "name": "Thyrow",                 "postalCode": "14959" },
+          { "@type": "Locality",    "name": "Ruhlsdorf",              "postalCode": "14513" },
+          { "@type": "City",        "name": "Stahnsdorf",             "postalCode": "14532" }
         ],
         "openingHoursSpecification": [
           {
@@ -96,6 +106,45 @@
           "Pflegegrade",
           "Demenzbetreuung",
           "Wundversorgung"
+        ],
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "5",
+          "reviewCount": "7",
+          "bestRating": "5",
+          "worstRating": "1"
+        },
+        "review": [
+          {
+            "@type": "Review",
+            "author": { "@type": "Person", "name": "Nadine Heinz" },
+            "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+            "reviewBody": "Sehr zuverlässiger und freundlicher Pflegedienst. Man wird hier als Mensch gesehen und nicht als Nummer, was ich besonders schätze."
+          },
+          {
+            "@type": "Review",
+            "author": { "@type": "Person", "name": "Nadine" },
+            "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+            "reviewBody": "Eine sehr kompetente und äußerst freundliche telefonische Beratung."
+          },
+          {
+            "@type": "Review",
+            "author": { "@type": "Person", "name": "Ole Müller" },
+            "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+            "reviewBody": "Sehr nettes Team und kompetente Beratung."
+          },
+          {
+            "@type": "Review",
+            "author": { "@type": "Person", "name": "Cordula" },
+            "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+            "reviewBody": "War am Tag der Eröffnung da. Wollte mir einen persönlichen Eindruck verschaffen. Sind sehr nette und kompetente Leute. Habe gleich einen Beratungstermin vereinbart."
+          },
+          {
+            "@type": "Review",
+            "author": { "@type": "Person", "name": "Henry Jakopaschke" },
+            "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+            "reviewBody": "Webauftritt ist modern und selbsterklärend. Kontakt war sehr unkompliziert und schnell. Wurde super nett und kompetent beraten."
+          }
         ]
       },
       {
@@ -142,11 +191,11 @@
   <link rel="icon" href="/favicon.ico" sizes="any">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="preload" as="image" href="img/team-car.jpg">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 
   <!-- Skip intro for returning visitors (runs before render to prevent flash) -->
-  <!-- DEV: skip-intro disabled so animation runs every load -->
-  <!-- <script>if(sessionStorage.getItem('pfj-intro'))document.documentElement.classList.add('skip-intro');</script> -->
+  <script>if(sessionStorage.getItem('pfj-intro'))document.documentElement.classList.add('skip-intro');</script>
 
   <link rel="stylesheet" href="styles.css">
 
@@ -314,19 +363,13 @@
         </div>
       </div>
 
-      <!-- Right panel: full-bleed image -->
+      <!-- Right panel: full-bleed video -->
       <div class="hero-right" aria-hidden="true">
-        <img class="hero-img-base" src="img/consultation.jpg" alt="Pflegefachkraft Jakopaschke² im Gespräch mit Patientin in Ludwigsfelde" loading="eager">
-        <img class="hero-img-hover" src="img/home-care.jpg" alt="" loading="eager">
-        <div class="hero-img-card">
-          <span class="hero-img-card-icon">
-            <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="20" height="20" aria-hidden="true"><path d="M4 10l4 4 8-8"/></svg>
-          </span>
-          <div class="hero-img-card-text">
-            <strong>Erste Beratung</strong>
-            <span>Bei Ihnen zu Hause</span>
-          </div>
-        </div>
+        <video class="hero-video" autoplay muted loop playsinline preload="none" poster="img/team-car.jpg">
+          <source src="img/hero.webm" type="video/webm">
+          <source src="img/hero.mp4" type="video/mp4">
+          <img src="img/team-car.jpg" alt="" width="1600" height="1066">
+        </video>
       </div>
 
     </section>
@@ -460,32 +503,40 @@
           <p class="section-sub">So starten Sie mit ambulanter Pflege in Ludwigsfelde – von der ersten Kontaktaufnahme bis zum ersten Besuch bei Ihnen zu Hause.</p>
         </div>
 
-        <div class="steps-list">
+        <div class="ablauf-split">
 
-          <div class="step reveal">
-            <div class="step-line" aria-hidden="true"></div>
-            <div class="step-num" aria-hidden="true"><span>1</span></div>
-            <div class="step-body">
-              <h3>Erstes Gespräch</h3>
-              <p>Rufen Sie uns an oder schreiben Sie uns per WhatsApp. Wir hören Ihnen zu, klären Ihren Bedarf und beantworten alle Fragen - ohne Druck und ohne Verpflichtung.</p>
-            </div>
+          <div class="ablauf-image reveal">
+            <img src="img/desk.jpg" alt="Beratungsgespräch bei Pflegedienst Jakopaschke²" loading="lazy" width="1600" height="1066">
           </div>
 
-          <div class="step reveal reveal-delay-1">
-            <div class="step-line" aria-hidden="true"></div>
-            <div class="step-num" aria-hidden="true"><span>2</span></div>
-            <div class="step-body">
-              <h3>Beratung bei Ihnen zu Hause</h3>
-              <p>Wir kommen zu Ihnen. Gemeinsam besprechen wir den Pflegeplan, klären die Abrechnung mit Ihrer Kasse und lernen uns in Ruhe kennen.</p>
-            </div>
-          </div>
+          <div class="steps-list">
 
-          <div class="step reveal reveal-delay-2">
-            <div class="step-num" aria-hidden="true"><span>3</span></div>
-            <div class="step-body">
-              <h3>Start der Pflegeleistung</h3>
-              <p>Ihr persönliches Pflegeteam kommt zu den vereinbarten Zeiten zu Ihnen - zuverlässig, ruhig und immer dieselben vertrauten Gesichter.</p>
+            <div class="step reveal">
+              <div class="step-line" aria-hidden="true"></div>
+              <div class="step-num" aria-hidden="true"><span>1</span></div>
+              <div class="step-body">
+                <h3>Erstes Gespräch</h3>
+                <p>Rufen Sie uns an oder schreiben Sie uns per WhatsApp. Wir hören Ihnen zu, klären Ihren Bedarf und beantworten alle Fragen - ohne Druck und ohne Verpflichtung.</p>
+              </div>
             </div>
+
+            <div class="step reveal reveal-delay-1">
+              <div class="step-line" aria-hidden="true"></div>
+              <div class="step-num" aria-hidden="true"><span>2</span></div>
+              <div class="step-body">
+                <h3>Beratung bei Ihnen zu Hause</h3>
+                <p>Wir kommen zu Ihnen. Gemeinsam besprechen wir den Pflegeplan, klären die Abrechnung mit Ihrer Kasse und lernen uns in Ruhe kennen.</p>
+              </div>
+            </div>
+
+            <div class="step reveal reveal-delay-2">
+              <div class="step-num" aria-hidden="true"><span>3</span></div>
+              <div class="step-body">
+                <h3>Start der Pflegeleistung</h3>
+                <p>Ihr persönliches Pflegeteam kommt zu den vereinbarten Zeiten zu Ihnen - zuverlässig, ruhig und immer dieselben vertrauten Gesichter.</p>
+              </div>
+            </div>
+
           </div>
 
         </div>
@@ -513,27 +564,120 @@
             <a href="tel:+4933785185777" class="btn-primary">Gespräch vereinbaren</a>
           </div>
 
-          <!-- Right: stats -->
-          <div class="trust-stats reveal reveal-delay-2">
-            <div class="trust-stat">
-              <p class="trust-stat__number">1. Apr.</p>
-              <p class="trust-stat__label">Neueröffnung 2026 in Ludwigsfelde</p>
-            </div>
-            <div class="trust-stat">
-              <p class="trust-stat__number">24h</p>
-              <p class="trust-stat__label">Rufbereitschaft - immer erreichbar</p>
-            </div>
-            <div class="trust-stat">
-              <p class="trust-stat__number">SGB</p>
-              <p class="trust-stat__label">Abrechnungsfähig über Pflege- & Krankenkasse</p>
-            </div>
-            <div class="trust-stat">
-              <p class="trust-stat__number">100%</p>
-              <p class="trust-stat__label">Ambulant - Pflege in Ihrem Zuhause</p>
+          <!-- Right: team photo + stats -->
+          <div class="trust-right reveal reveal-delay-2">
+            <img class="trust-team-photo" src="img/team.jpg" alt="Das Team von Pflegedienst Jakopaschke² in Ludwigsfelde" loading="lazy" width="1600" height="1066">
+            <div class="trust-stats">
+              <div class="trust-stat">
+                <p class="trust-stat__number">1. Apr.</p>
+                <p class="trust-stat__label">Neueröffnung 2026</p>
+              </div>
+              <div class="trust-stat">
+                <p class="trust-stat__number">24h</p>
+                <p class="trust-stat__label">Rufbereitschaft</p>
+              </div>
+              <div class="trust-stat">
+                <p class="trust-stat__number">SGB</p>
+                <p class="trust-stat__label">V & XI abrechenbar</p>
+              </div>
+              <div class="trust-stat">
+                <p class="trust-stat__number">100%</p>
+                <p class="trust-stat__label">Ambulant & mobil</p>
+              </div>
             </div>
           </div>
 
         </div>
+      </div>
+    </section>
+
+    <section id="bewertungen" class="section section--alt">
+      <div class="container">
+
+        <div class="reviews-header reveal">
+          <div class="reviews-header__left">
+            <p class="section-label">Bewertungen</p>
+            <h2 class="section-heading">Was unsere Kunden sagen</h2>
+          </div>
+          <div class="reviews-header__score">
+            <span class="reviews-score-num">5,0</span>
+            <div class="reviews-score-stars" aria-label="5 von 5 Sternen">★★★★★</div>
+            <span class="reviews-score-sub">7 Bewertungen · Google</span>
+          </div>
+        </div>
+
+        <div class="reviews-carousel-wrapper reveal">
+          <button class="reviews-nav reviews-nav--prev" aria-label="Zurück" type="button">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="20" height="20"><path d="M15 18l-6-6 6-6"/></svg>
+          </button>
+          <div class="reviews-carousel" id="reviewsCarousel">
+
+            <article class="review-card">
+              <div class="review-card__top">
+                <div class="review-card__avatar" style="background:#4285F4">N</div>
+                <div class="review-card__meta">
+                  <span class="review-card__name">Nadine Heinz</span>
+                  <span class="review-card__stars">★★★★★</span>
+                </div>
+                <svg class="review-card__google" viewBox="0 0 24 24" aria-label="Google" width="18" height="18"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+              </div>
+              <blockquote class="review-card__text">Sehr zuverlässiger und freundlicher Pflegedienst. Man wird hier als Mensch gesehen und nicht als Nummer, was ich besonders schätze.</blockquote>
+            </article>
+
+            <article class="review-card">
+              <div class="review-card__top">
+                <div class="review-card__avatar" style="background:#EA4335">N</div>
+                <div class="review-card__meta">
+                  <span class="review-card__name">Nadine</span>
+                  <span class="review-card__stars">★★★★★</span>
+                </div>
+                <svg class="review-card__google" viewBox="0 0 24 24" aria-label="Google" width="18" height="18"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+              </div>
+              <blockquote class="review-card__text">Eine sehr kompetente und äußerst freundliche telefonische Beratung.</blockquote>
+            </article>
+
+            <article class="review-card">
+              <div class="review-card__top">
+                <div class="review-card__avatar" style="background:#34A853">O</div>
+                <div class="review-card__meta">
+                  <span class="review-card__name">Ole Müller</span>
+                  <span class="review-card__stars">★★★★★</span>
+                </div>
+                <svg class="review-card__google" viewBox="0 0 24 24" aria-label="Google" width="18" height="18"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+              </div>
+              <blockquote class="review-card__text">Sehr nettes Team und kompetente Beratung.</blockquote>
+            </article>
+
+            <article class="review-card">
+              <div class="review-card__top">
+                <div class="review-card__avatar" style="background:#FBBC05;color:#333">C</div>
+                <div class="review-card__meta">
+                  <span class="review-card__name">Cordula</span>
+                  <span class="review-card__stars">★★★★★</span>
+                </div>
+                <svg class="review-card__google" viewBox="0 0 24 24" aria-label="Google" width="18" height="18"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+              </div>
+              <blockquote class="review-card__text">War am Tag der Eröffnung da. Wollte mir einen persönlichen Eindruck verschaffen. Sind sehr nette und kompetente Leute. Habe gleich einen Beratungstermin vereinbart.</blockquote>
+            </article>
+
+            <article class="review-card">
+              <div class="review-card__top">
+                <div class="review-card__avatar" style="background:#4285F4">H</div>
+                <div class="review-card__meta">
+                  <span class="review-card__name">Henry Jakopaschke</span>
+                  <span class="review-card__stars">★★★★★</span>
+                </div>
+                <svg class="review-card__google" viewBox="0 0 24 24" aria-label="Google" width="18" height="18"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+              </div>
+              <blockquote class="review-card__text">Webauftritt ist modern und selbsterklärend. Kontakt war sehr unkompliziert und schnell. Wurde super nett und kompetent beraten.</blockquote>
+            </article>
+
+          </div>
+          <button class="reviews-nav reviews-nav--next" aria-label="Weiter" type="button">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="20" height="20"><path d="M9 18l6-6-6-6"/></svg>
+          </button>
+        </div>
+
       </div>
     </section>
 
@@ -602,7 +746,15 @@
             </button>
             <div class="faq-body" id="faq-5" role="region">
               <div class="faq-body-inner">
-                <p>Wir sind in der Gemeinde Ludwigsfelde und den direkt umliegenden Ortschaften tätig. Rufen Sie uns an, wir klären gemeinsam, ob wir für Sie da sein können.</p>
+                <p>Wir sind in folgenden Postleitzahlgebieten tätig:</p>
+                <ul>
+                  <li><strong>14974</strong> – Ludwigsfelde &amp; Großbeeren (komplett)</li>
+                  <li><strong>15806</strong> – Zossen: Glienick, Schünow, Nunsdorf</li>
+                  <li><strong>14959</strong> – Trebbin: Christinendorf, Großbeuthen, Märkisch Wilmersdorf, Thyrow</li>
+                  <li><strong>14513</strong> – Teltow: Ruhlsdorf</li>
+                  <li><strong>14532</strong> – Stahnsdorf (komplett, ohne Kleinmachnow)</li>
+                </ul>
+                <p>Nicht sicher, ob wir für Sie erreichbar sind? Rufen Sie uns an – wir klären das gemeinsam.</p>
               </div>
             </div>
           </div>
@@ -614,6 +766,7 @@
 
     <section id="kontakt" class="section">
       <div class="container">
+
         <div class="contact-split">
 
           <!-- Left: context text -->
@@ -675,6 +828,11 @@
           </div>
 
         </div>
+
+        <div class="contact-banner reveal">
+          <img src="img/balcony.jpg" alt="Team Pflegedienst Jakopaschke² am Standort in Ludwigsfelde" loading="lazy" width="1600" height="1066">
+        </div>
+
       </div>
     </section>
 
