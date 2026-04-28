@@ -250,6 +250,8 @@ ul, ol { list-style: none; }
 /* ── Section shells ─────────────────────────────────────────── */
 .section {
   padding-block: 80px;
+  position: relative;
+  overflow: hidden;
 }
 @media (min-width: 768px) { .section { padding-block: 112px; } }
 
@@ -257,6 +259,30 @@ ul, ol { list-style: none; }
 .section--alt { background: var(--off-white); }
 .section--teal { background: var(--teal-50); }
 .section--dark { background: var(--gray-900); color: #fff; }
+
+/* Dot mesh — shared base */
+.hero-left::after,
+#bewertungen::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(circle, rgba(15,118,110,0.18) 1px, transparent 1px);
+  background-size: 22px 22px;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Hero: fade from top to mid */
+.hero-left::after {
+  mask-image: linear-gradient(to bottom, black 0%, transparent 58%);
+  -webkit-mask-image: linear-gradient(to bottom, black 0%, transparent 58%);
+}
+
+/* Reviews: full section, fade out at bottom */
+#bewertungen::before {
+  mask-image: linear-gradient(to bottom, black 0%, black 72%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to bottom, black 0%, black 72%, transparent 100%);
+}
 
 /* Subtle red curve background for steps + faq sections */
 #ablauf,
@@ -653,6 +679,18 @@ ul, ol { list-style: none; }
   overflow: hidden;
   clip-path: inset(0 0 0 0 round 0 24px 24px 0);
   z-index: 1;
+}
+
+.hero-left::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(circle, rgba(15,118,110,0.22) 1px, transparent 1px);
+  background-size: 22px 22px;
+  mask-image: linear-gradient(to bottom, black 0%, transparent 58%);
+  -webkit-mask-image: linear-gradient(to bottom, black 0%, transparent 58%);
+  pointer-events: none;
+  z-index: 0;
 }
 
 .hero-left .hero-content {
