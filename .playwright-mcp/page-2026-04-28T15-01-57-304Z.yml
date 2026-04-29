@@ -1,0 +1,27 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - heading "Großes Widget" [level=2] [ref=e3]
+    - generic [ref=e4]:
+      - iframe [ref=e5]:
+        - generic [ref=f1e3]:
+          - heading [level=3] [ref=f1e6]
+          - heading "Basierend auf Bewertungen" [level=4] [ref=f1e9]:
+            - text: Basierend auf
+            - text: Bewertungen
+      - link [ref=e6] [cursor=pointer]:
+        - /url: https://www.pflegehilfe.org/dienst-jakopaschke-gmbh-pflege-ludwigsfelde-134251
+        - img [ref=e7]
+  - generic [ref=e8]:
+    - heading "Kleines Widget" [level=2] [ref=e9]
+    - generic [ref=e11]:
+      - iframe [ref=e12]:
+        - generic [ref=f2e2]:
+          - generic [ref=f2e4]:
+            - heading [level=4]
+          - heading "Basierend auf Bewertungen" [level=4] [ref=f2e7]:
+            - generic [ref=f2e8]:
+              - text: Basierend auf
+              - text: Bewertungen
+      - link [ref=e13] [cursor=pointer]:
+        - /url: https://www.pflegehilfe.org/dienst-jakopaschke-gmbh-pflege-ludwigsfelde-134251
+        - img [ref=e14]

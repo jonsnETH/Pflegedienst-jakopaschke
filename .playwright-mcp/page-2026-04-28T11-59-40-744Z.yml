@@ -1,0 +1,248 @@
+- generic [active] [ref=e1]:
+  - link "Zum Inhalt springen" [ref=e2] [cursor=pointer]:
+    - /url: "#main"
+  - dialog "Intro" [ref=e3]:
+    - img [ref=e5]
+    - paragraph [ref=e36]: Pflege, die wirklich ankommt.
+    - button "Animation überspringen" [ref=e37] [cursor=pointer]: Überspringen
+  - navigation "Hauptnavigation" [ref=e38]:
+    - generic [ref=e40]:
+      - link "Pflegedienst Jakopaschke² GmbH – Startseite" [ref=e41] [cursor=pointer]:
+        - /url: "#"
+        - img "Pflegedienst Jakopaschke² GmbH" [ref=e42]
+      - generic [ref=e43]:
+        - link "Leistungen" [ref=e44] [cursor=pointer]:
+          - /url: "#leistungen"
+        - link "Über uns" [ref=e45] [cursor=pointer]:
+          - /url: "#ueber-uns"
+        - link "FAQ" [ref=e46] [cursor=pointer]:
+          - /url: "#faq"
+        - link "Ratgeber" [ref=e47] [cursor=pointer]:
+          - /url: blog/
+        - link "03378 5185777" [ref=e48] [cursor=pointer]:
+          - /url: tel:+4933785185777
+          - img [ref=e49]
+          - text: 03378 5185777
+  - main [ref=e51]:
+    - generic [ref=e54]:
+      - generic [ref=e55]: Neueröffnung · 1. April 2026 in Ludwigsfelde
+      - heading "Pflegen im Fläming." [level=1] [ref=e58]:
+        - text: Pflegen im
+        - generic [ref=e59]: Fläming.
+      - paragraph [ref=e60]: Ambulanter Pflegedienst in Ludwigsfelde und Umgebung.
+      - generic [ref=e61]:
+        - link "Per WhatsApp schreiben" [ref=e62] [cursor=pointer]:
+          - /url: https://wa.me/4915167673238
+          - img [ref=e63]
+          - text: Per WhatsApp schreiben
+        - link "03378 5185777" [ref=e65] [cursor=pointer]:
+          - /url: tel:+4933785185777
+          - img [ref=e66]
+          - text: 03378 5185777
+      - generic [ref=e68]:
+        - generic [ref=e69]:
+          - img [ref=e71]
+          - text: SGB V & XI
+        - generic [ref=e74]:
+          - img [ref=e76]
+          - text: Direkt erreichbar
+        - generic [ref=e79]:
+          - img [ref=e81]
+          - text: Ludwigsfelde & Umgebung
+    - generic [ref=e86]:
+      - generic [ref=e87]:
+        - paragraph [ref=e88]: Leistungen
+        - heading "Was wir für Sie tun" [level=2] [ref=e89]
+        - paragraph [ref=e90]: Häusliche Pflege in Ludwigsfelde – abgerechnet über Ihre Pflege- oder Krankenkasse nach SGB V & XI.
+      - tablist "Leistungsübersicht nach Kasse" [ref=e91]:
+        - tab "Pflegekasse SGB XI" [selected] [ref=e92] [cursor=pointer]:
+          - text: Pflegekasse
+          - generic [ref=e93]: SGB XI
+        - tab "Krankenkasse SGB V" [ref=e94] [cursor=pointer]:
+          - text: Krankenkasse
+          - generic [ref=e95]: SGB V
+      - tabpanel "Pflegekasse SGB XI" [ref=e96]:
+        - generic [ref=e97]:
+          - generic [ref=e98]:
+            - img [ref=e100]
+            - paragraph [ref=e103]: Grundpflege
+            - paragraph [ref=e104]: Körperpflege, An- und Auskleiden, Mobilisation sowie Unterstützung bei der Ernährung - im gewohnten Zuhause, in Ihrem Tempo.
+          - generic [ref=e105]:
+            - img [ref=e107]
+            - paragraph [ref=e109]: Betreuung
+            - paragraph [ref=e110]: Gesprächsbegleitung, gemeinsame Freizeitgestaltung und soziale Betreuung für mehr Lebensqualität und Selbstständigkeit.
+          - generic [ref=e111]:
+            - img [ref=e113]
+            - paragraph [ref=e115]: Entlastungsleistungen
+            - paragraph [ref=e116]: Stundenweise Entlastung für pflegende Angehörige - finanziert über den Entlastungsbetrag nach § 45b SGB XI.
+          - generic [ref=e117]:
+            - img [ref=e119]
+            - paragraph [ref=e122]: Hauswirtschaft
+            - paragraph [ref=e123]: Nach individueller Absprache – hauswirtschaftliche Unterstützung als Teil eines umfassenden Pflegeeinsatzes.
+      - generic [ref=e124]:
+        - generic [ref=e125]:
+          - img [ref=e127]
+          - generic [ref=e130]:
+            - paragraph [ref=e131]: 24 Stunden Rufbereitschaft
+            - paragraph [ref=e132]: Wir sind immer für Sie da.
+        - link "Jetzt anrufen" [ref=e133] [cursor=pointer]:
+          - /url: tel:+4933785185777
+    - generic [ref=e135]:
+      - generic [ref=e136]:
+        - paragraph [ref=e137]: So starten Sie
+        - heading "In drei Schritten zur individuellen Pflegeleistung" [level=2] [ref=e138]
+        - paragraph [ref=e139]: So starten Sie mit ambulanter Pflege in Ludwigsfelde – von der ersten Kontaktaufnahme bis zum ersten Besuch bei Ihnen zu Hause.
+      - generic [ref=e140]:
+        - img "Beratungsgespräch bei Pflegedienst Jakopaschke²" [ref=e142]
+        - generic [ref=e143]:
+          - generic [ref=e144]:
+            - generic [ref=e147]: "1"
+            - generic [ref=e148]:
+              - heading "Erstes Gespräch" [level=3] [ref=e149]
+              - paragraph [ref=e150]: Rufen Sie uns an oder schreiben Sie uns per WhatsApp. Wir hören Ihnen zu, klären Ihren Bedarf und beantworten alle Fragen - ohne Druck und ohne Verpflichtung.
+          - generic [ref=e151]:
+            - generic [ref=e154]: "2"
+            - generic [ref=e155]:
+              - heading "Beratung bei Ihnen zu Hause" [level=3] [ref=e156]
+              - paragraph [ref=e157]: Wir kommen zu Ihnen. Gemeinsam besprechen wir den Pflegeplan, klären die Abrechnung mit Ihrer Kasse und lernen uns in Ruhe kennen.
+          - generic [ref=e158]:
+            - generic [ref=e160]: "3"
+            - generic [ref=e161]:
+              - heading "Start der Pflegeleistung" [level=3] [ref=e162]
+              - paragraph [ref=e163]: Ihr persönliches Pflegeteam kommt zu den vereinbarten Zeiten zu Ihnen - zuverlässig, ruhig und immer dieselben vertrauten Gesichter.
+    - generic [ref=e166]:
+      - generic [ref=e167]:
+        - paragraph [ref=e168]: Über uns
+        - heading "Pflege mit Würde und Vertrauen" [level=2] [ref=e169]
+        - paragraph [ref=e170]: "Pflegedienst Jakopaschke² GmbH entsteht aus dem Wunsch, Pflege so zu gestalten, wie wir sie uns selbst für unsere Angehörigen wünschen würden: menschlich nah, zuverlässig und auf Augenhöhe."
+        - generic [ref=e171]: "\"Pflege bedeutet für uns nicht nur Unterstützung - es bedeutet, jemandem das Gefühl zu geben, dass er nicht allein ist.\""
+        - paragraph [ref=e172]: Unser Team kommt zu Ihnen in Ludwigsfelde und den umliegenden Gemeinden im Teltow-Fläming. Wir kümmern uns um alles – von der Abrechnung mit Ihrer Kasse bis zum täglichen Besuch.
+        - link "Gespräch vereinbaren" [ref=e173] [cursor=pointer]:
+          - /url: tel:+4933785185777
+      - generic [ref=e174]:
+        - img "Das Team von Pflegedienst Jakopaschke² in Ludwigsfelde" [ref=e175]
+        - generic [ref=e176]:
+          - generic [ref=e177]:
+            - paragraph [ref=e178]: 1. Apr.
+            - paragraph [ref=e179]: Neueröffnung 2026
+          - generic [ref=e180]:
+            - paragraph [ref=e181]: 24h
+            - paragraph [ref=e182]: Rufbereitschaft
+          - generic [ref=e183]:
+            - paragraph [ref=e184]: SGB
+            - paragraph [ref=e185]: V & XI abrechenbar
+          - generic [ref=e186]:
+            - paragraph [ref=e187]: 100%
+            - paragraph [ref=e188]: Ambulant & mobil
+    - generic [ref=e190]:
+      - generic [ref=e191]:
+        - paragraph [ref=e192]: Häufige Fragen
+        - heading "Was Sie wissen möchten" [level=2] [ref=e193]
+      - generic [ref=e194]:
+        - generic [ref=e195]:
+          - button "Wie schnell kann die Pflege beginnen?" [ref=e196] [cursor=pointer]:
+            - text: Wie schnell kann die Pflege beginnen?
+            - img [ref=e197]
+          - region:
+            - paragraph [ref=e199]: In der Regel können wir innerhalb weniger Tage nach dem ersten Gespräch mit der Pflege beginnen. Wir kümmern uns um alle notwendigen Formalitäten und die Absprache mit Ihrer Pflegekasse - damit Sie sich auf das Wesentliche konzentrieren können.
+        - generic [ref=e200]:
+          - button "Wie läuft die Abrechnung mit der Krankenkasse ab?" [ref=e201] [cursor=pointer]:
+            - text: Wie läuft die Abrechnung mit der Krankenkasse ab?
+            - img [ref=e202]
+          - region:
+            - paragraph [ref=e204]: Wir übernehmen die gesamte Abrechnung direkt mit Ihrer Pflege- oder Krankenkasse (SGB XI oder SGB V). Sie müssen sich um nichts kümmern - kein Papierkram, keine komplizierten Formulare. Wir erklären Ihnen beim Erstgespräch, welche Leistungen über Ihre Kasse abgedeckt sind.
+        - generic [ref=e205]:
+          - button "Kommen immer dieselben Pflegepersonen?" [ref=e206] [cursor=pointer]:
+            - text: Kommen immer dieselben Pflegepersonen?
+            - img [ref=e207]
+          - region:
+            - paragraph [ref=e209]: Ja, das ist uns sehr wichtig. Wir bemühen uns, Ihnen ein festes, kleines Pflegeteam zuzuteilen. Vertraute Gesichter geben Sicherheit - besonders in sensiblen Momenten. Nur in Ausnahmefällen (Urlaub, Krankheit) kommen Vertretungen, über die wir Sie selbstverständlich im Voraus informieren.
+        - generic [ref=e210]:
+          - button "Welche Pflegegrade werden betreut?" [ref=e211] [cursor=pointer]:
+            - text: Welche Pflegegrade werden betreut?
+            - img [ref=e212]
+          - region:
+            - paragraph [ref=e214]: Wir betreuen Menschen aller Pflegegrade (1 bis 5). Die genauen Leistungen und der Umfang hängen von Ihrem individuellen Pflegegrad und Ihren Bedürfnissen ab. Haben Sie noch keinen Pflegegrad? Wir helfen Ihnen gerne dabei, den Antrag zu stellen.
+        - generic [ref=e215]:
+          - button "In welchem Gebiet sind Sie tätig?" [ref=e216] [cursor=pointer]:
+            - text: In welchem Gebiet sind Sie tätig?
+            - img [ref=e217]
+          - region:
+            - paragraph [ref=e219]: Wir sind in der Gemeinde Ludwigsfelde und den direkt umliegenden Ortschaften tätig. Rufen Sie uns an, wir klären gemeinsam, ob wir für Sie da sein können.
+    - generic [ref=e221]:
+      - img "Team Pflegedienst Jakopaschke² am Standort in Ludwigsfelde" [ref=e223]
+      - generic [ref=e224]:
+        - generic [ref=e225]:
+          - paragraph [ref=e226]: Kontakt
+          - heading "Sprechen Sie uns an" [level=2] [ref=e227]
+          - paragraph [ref=e229]: Ob dringende Fragen, ein erster Beratungstermin oder einfach Informationen - wir sind für Sie da. Rufen Sie uns an oder schreiben Sie uns. Kein langer Warteraum, kein automatisches System.
+          - generic [ref=e230]:
+            - strong [ref=e231]: Pflegedienst Jakopaschke² GmbH
+            - text: Ludwigsfelde und Umgebung
+            - text: Fläming, Brandenburg
+            - text: "Neueröffnung: 1. April 2026"
+        - generic [ref=e232]:
+          - link "03378 5185777 Anrufen - Mo. bis Sa." [ref=e233] [cursor=pointer]:
+            - /url: tel:+4933785185777
+            - img [ref=e235]
+            - generic [ref=e237]:
+              - text: 03378 5185777
+              - generic [ref=e238]: Anrufen - Mo. bis Sa.
+          - link "WhatsApp schreiben Nachricht senden" [ref=e239] [cursor=pointer]:
+            - /url: https://wa.me/4915167673238
+            - img [ref=e241]
+            - generic [ref=e243]:
+              - text: WhatsApp schreiben
+              - generic [ref=e244]: Nachricht senden
+          - link "info@pflegedienst-jakopaschke.de Per E-Mail schreiben" [ref=e245] [cursor=pointer]:
+            - /url: mailto:info@pflegedienst-jakopaschke.de
+            - img [ref=e247]
+            - generic [ref=e250]:
+              - text: info@pflegedienst-jakopaschke.de
+              - generic [ref=e251]: Per E-Mail schreiben
+  - contentinfo [ref=e252]:
+    - generic [ref=e253]:
+      - generic [ref=e254]:
+        - generic [ref=e255]:
+          - link "Pflegedienst Jakopaschke² GmbH" [ref=e256] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e257]
+          - paragraph [ref=e286]:
+            - text: Pflegen im Fläming –
+            - text: ambulante Pflege & Betreuung
+            - text: in Ludwigsfelde & Umgebung.
+        - generic [ref=e287]:
+          - paragraph [ref=e288]: Kontakt
+          - link "03378 5185777" [ref=e289] [cursor=pointer]:
+            - /url: tel:+4933785185777
+          - link "WhatsApp" [ref=e290] [cursor=pointer]:
+            - /url: https://wa.me/4915167673238
+          - link "info@pflegedienst-jakopaschke.de" [ref=e291] [cursor=pointer]:
+            - /url: mailto:info@pflegedienst-jakopaschke.de
+        - generic [ref=e292]:
+          - paragraph [ref=e293]: Adresse
+          - link "Maxim-Gorki-Straße 28 14974 Ludwigsfelde" [ref=e294] [cursor=pointer]:
+            - /url: https://maps.app.goo.gl/E5L3AMo8mvCtd46r6
+            - text: Maxim-Gorki-Straße 28
+            - text: 14974 Ludwigsfelde
+          - paragraph [ref=e295]: Navigation
+          - link "Leistungen" [ref=e296] [cursor=pointer]:
+            - /url: "#leistungen"
+          - link "Über uns" [ref=e297] [cursor=pointer]:
+            - /url: "#ueber-uns"
+          - link "FAQ" [ref=e298] [cursor=pointer]:
+            - /url: "#faq"
+          - link "Kontakt" [ref=e299] [cursor=pointer]:
+            - /url: "#kontakt"
+      - generic [ref=e300]:
+        - generic [ref=e301]: © 2026 Pflegedienst Jakopaschke² GmbH GmbH
+        - generic [ref=e302]:
+          - link "Ratgeber" [ref=e303] [cursor=pointer]:
+            - /url: blog/
+          - link "Impressum" [ref=e304] [cursor=pointer]:
+            - /url: impressum.html
+          - link "Datenschutz" [ref=e305] [cursor=pointer]:
+            - /url: datenschutz.html
+  - link "Per WhatsApp schreiben" [ref=e306] [cursor=pointer]:
+    - /url: https://wa.me/4915167673238
+    - img [ref=e307]
