@@ -35,8 +35,8 @@
 <body>
   <nav id="site-nav">
     <div class="container nav-bar">
-      <a href="../index.html" class="nav-brand">
-        <span style="font-size:20px;font-weight:700;color:#111827;letter-spacing:-0.02em;"><span class="brand-name">Pflegedienst Jakopaschke² GmbH</span></span>
+      <a href="../index.html" class="nav-brand" aria-label="Pflegedienst Jakopaschke² GmbH – Startseite">
+        <img src="../logo.svg" alt="Pflegedienst Jakopaschke² GmbH" class="nav-logo" height="34" width="auto">
       </a>
       <div class="nav-links">
         <a href="../index.html#leistungen" class="nav-link">Leistungen</a>
@@ -52,7 +52,7 @@
 
   <main>
     <article class="blog-article">
-      <div class="container">
+      <div class="container blog-layout">
         <div class="blog-wrap">
 
           <a href="index.html" class="impressum-back">
@@ -66,42 +66,77 @@
           </div>
 
           <h1 class="blog-title">Grundpflege und Behandlungspflege – was ist der Unterschied?</h1>
-          <p class="blog-intro">Wenn es um ambulante Pflege geht, fallen schnell Begriffe wie „Grundpflege" und „Behandlungspflege" – und die meisten Menschen nicken, ohne wirklich zu wissen, was gemeint ist. Dabei ist der Unterschied entscheidend: Er bestimmt, welche Kasse zahlt und was ein Pflegedienst bei Ihnen zuhause tun darf.</p>
 
-          <h2>Grundpflege: Unterstützung im Alltag (SGB XI)</h2>
-          <p>Unter <strong>Grundpflege</strong> versteht man alle Leistungen, die den Alltag eines pflegebedürftigen Menschen unterstützen – also das, was früher oft „pflegerische Grundversorgung" hieß. Dazu gehören:</p>
+          <picture>
+            <source srcset="../img/blog/grundpflege-behandlungspflege-unterschied.webp" type="image/webp">
+            <img src="../img/blog/grundpflege-behandlungspflege-unterschied.jpg" alt="Pflegefachkraft bei der sorgfältigen Dokumentation der Pflegeleistungen" loading="eager" style="width:100%;border-radius:12px;aspect-ratio:16/9;object-fit:cover;display:block;margin-bottom:2rem;">
+          </picture>
+
+          <p class="blog-intro">Herr T. aus Ludwigsfelde hat Diabetes und Pflegegrad 2. Als wir ihm erklärten, dass seine tägliche Insulingabe nichts kostet und direkt von seiner Krankenkasse bezahlt wird – zusätzlich zu den Pflegesachleistungen, die seine Pflegekasse trägt – schaute er uns ungläubig an. „Das wusste ich nicht." Dieser Satz ist der Grund, warum wir diesen Artikel schreiben.</p>
+
+          <p>Viele Familien bezahlen Leistungen aus eigener Tasche, die eigentlich die Kasse tragen würde. Der Grund: Sie wissen nicht, dass zwei verschiedene Kassen zuständig sind – für zwei verschiedene Arten von Pflege. Und welche Kasse wofür zuständig ist, entscheidet, ob Sie selbst zahlen oder nicht.</p>
+
+          <h2 id="grundpflege">Grundpflege: Was ist das – und wer zahlt?</h2>
+          <p>Unter <strong>Grundpflege</strong> versteht man alle Leistungen, die den Alltag eines pflegebedürftigen Menschen direkt unterstützen. Es geht um das, was früher „Körperpflege" hieß – und um alles, was das tägliche Leben strukturiert:</p>
           <ul>
-            <li>Körperpflege: Waschen, Duschen, Baden, Zahnpflege, Rasieren</li>
+            <li>Waschen, Duschen, Baden – vollständig oder teilweise</li>
+            <li>Zahnpflege, Rasieren, Kämmen</li>
             <li>An- und Auskleiden</li>
-            <li>Hilfe bei der Nahrungsaufnahme</li>
             <li>Hilfe beim Aufstehen, Gehen, Treppensteigen</li>
-            <li>Unterstützung bei der Toilettennutzung</li>
-            <li>Lagerung und Mobilisation zur Dekubitusprophylaxe</li>
+            <li>Unterstützung beim Essen und Trinken</li>
+            <li>Toilettennutzung und Inkontinenzversorgung</li>
+            <li>Lagerung und Mobilisation – zum Beispiel zur Dekubitusvorbeugung</li>
           </ul>
-          <p>Die Grundpflege wird über die <strong>Pflegekasse nach SGB XI</strong> abgerechnet – vorausgesetzt, ein Pflegegrad liegt vor. Ab Pflegegrad 2 stehen dafür monatliche Sachleistungsbudgets zur Verfügung, die ein zugelassener Pflegedienst direkt mit der Kasse abrechnet.</p>
+          <p>Die Grundpflege wird über die <strong>Pflegekasse nach SGB XI</strong> abgerechnet – vorausgesetzt, es liegt ein anerkannter Pflegegrad vor. Ab Pflegegrad 2 stehen monatliche Sachleistungsbudgets zur Verfügung, die ein zugelassener Pflegedienst direkt mit der Kasse abrechnet. Sie müssen nichts vorstrecken.</p>
 
-          <h2>Behandlungspflege: Medizinische Leistungen (SGB V)</h2>
-          <p><strong>Behandlungspflege</strong> hingegen umfasst medizinische Maßnahmen, die zwar zuhause erbracht werden, aber ärztlich verordnet sind. Sie wird über die <strong>Krankenkasse nach SGB V</strong> abgerechnet – und setzt keinen Pflegegrad voraus.</p>
+          <h2 id="behandlungspflege">Behandlungspflege: Was ist das – und wer zahlt?</h2>
+          <p><strong>Behandlungspflege</strong> ist eine andere Kategorie. Hier geht es um medizinische Maßnahmen, die zuhause erbracht werden, aber ärztlich verordnet sind. Der entscheidende Unterschied: Die Behandlungspflege wird über die <strong>Krankenkasse nach SGB V</strong> abgerechnet – und setzt <em>keinen</em> Pflegegrad voraus.</p>
+          <p>Das bedeutet: Selbst wenn jemand noch keinen Pflegegrad hat, können bestimmte medizinische Pflegeleistungen trotzdem kostenlos zuhause erbracht werden – auf Anordnung des Hausarztes.</p>
           <p>Typische Behandlungspflege-Leistungen:</p>
           <ul>
-            <li>Wundversorgung und Verbandswechsel</li>
-            <li>Medikamentengabe (z. B. Injektionen, Insulingaben)</li>
-            <li>Blutdruckmessen, Blutzuckerkontrolle</li>
-            <li>Anlegen von Kompressionsstrümpfen</li>
+            <li>Wundversorgung und Verbandswechsel – zum Beispiel nach Operationen oder bei chronischen Wunden</li>
+            <li>Medikamentengabe: Insulinspritzen, Injektionen, Infusionen</li>
+            <li>Blutzucker- und Blutdruckkontrolle</li>
+            <li>Anlegen von Kompressionsstrümpfen oder -verbänden</li>
             <li>Katheterisierung und Stomapflege</li>
-            <li>Inhalationen und Sauerstoffgabe</li>
+            <li>Inhalationen, Sauerstoffgabe, Absaugung</li>
           </ul>
-          <p>Der Hausarzt stellt dafür eine Verordnung aus – ähnlich wie ein Rezept. Danach kommt die Pflegefachkraft ins Haus und rechnet direkt mit der Krankenkasse ab. Für Sie entstehen in der Regel keine Kosten.</p>
+          <p>Der Hausarzt stellt eine <strong>Verordnung häuslicher Krankenpflege</strong> aus – ähnlich wie ein Rezept. Danach kommt unsere Pflegefachkraft und rechnet direkt mit der Krankenkasse ab. Für Sie entstehen in der Regel keine Kosten.</p>
 
-          <h2>Kann man beides gleichzeitig haben?</h2>
-          <p>Ja – und das ist sogar häufig der Fall. Viele unserer Kunden in Ludwigsfelde erhalten sowohl Grundpflege (Pflegekasse) als auch Behandlungspflege (Krankenkasse) von uns. Wir koordinieren die Abrechnung mit beiden Kassen – Sie müssen sich um nichts kümmern.</p>
+          <div class="blog-callout">
+            <p><strong>Wichtig:</strong> Behandlungspflege darf nur von examinierten Pflegefachkräften erbracht werden – nicht von Pflegehilfskräften. Wenn Sie nicht sicher sind, ob Ihr Pflegedienst die nötige Qualifikation mitbringt: Fragen Sie direkt nach.</p>
+          </div>
 
-          <h3>Beispiel aus dem Alltag</h3>
-          <p>Herr M. aus Ludwigsfelde hat Pflegegrad 3 und Diabetes. Morgens kommt unsere Pflegefachkraft: Sie hilft beim Waschen und Anziehen (Grundpflege → Pflegekasse) und gibt die Insulinspritze (Behandlungspflege → Krankenkasse). Herr M. zahlt nichts dazu – alles läuft über die Kassen.</p>
+          <h2 id="beide-gleichzeitig">Kann man beides gleichzeitig haben?</h2>
+          <p>Ja – und das ist häufig sinnvoll. Viele unserer Kunden in Ludwigsfelde erhalten morgens sowohl Grundpflege als auch Behandlungspflege von uns. Wir koordinieren die Abrechnung mit beiden Kassen. Sie müssen sich um nichts kümmern.</p>
+          <p>Das ist kein Ausnahmefall, sondern für viele Pflegebedürftige mit mehreren Erkrankungen der Normalfall. Und es bedeutet: Beide Systeme zahlen – Sie zahlen nichts oder wenig.</p>
 
-          <h2>Was bedeutet das konkret für Sie?</h2>
-          <p>Wenn Sie für sich oder einen Angehörigen ambulante Pflege in Ludwigsfelde oder der Region Fläming suchen, lohnt es sich, beide Leistungsarten zu prüfen. Manchmal werden Leistungen verschenkt, weil Familien nicht wissen, dass die Krankenkasse noch zusätzlich zahlt.</p>
-          <p>Im ersten Gespräch mit uns schauen wir gemeinsam: Welcher Pflegegrad liegt vor? Was hat der Hausarzt verordnet oder könnte verordnen? Und wie lässt sich das optimal kombinieren – für die bestmögliche Versorgung ohne unnötige Eigenkosten.</p>
+          <h2 id="beispiel">Ein Tag aus der Praxis: Herr T.</h2>
+          <p>Herr T. ist 78 Jahre alt, lebt alleine in Ludwigsfelde und hat Pflegegrad 3 und Diabetes. Jeden Morgen klingelt unsere Pflegefachkraft:</p>
+          <ul>
+            <li>Sie hilft beim Waschen und Anziehen → <strong>Grundpflege</strong> → Pflegekasse (SGB XI)</li>
+            <li>Sie gibt die Insulinspritze und kontrolliert den Blutzucker → <strong>Behandlungspflege</strong> → Krankenkasse (SGB V)</li>
+            <li>Sie legt die Kompressionsstrümpfe an → <strong>Behandlungspflege</strong> → Krankenkasse (SGB V)</li>
+          </ul>
+          <p>Herr T. zahlt nichts dazu. Alle Leistungen laufen über die Kassen. Und sein Hausarzt musste lediglich die Verordnung für die Behandlungspflege ausstellen – was er bei der nächsten Praxisvisite erledigt hatte.</p>
+
+          <h2 id="irrtümer">Die häufigsten Missverständnisse</h2>
+          <p><strong>„Für Behandlungspflege brauche ich einen Pflegegrad."</strong> – Falsch. Behandlungspflege nach SGB V setzt keinen Pflegegrad voraus. Sie brauchen nur eine ärztliche Verordnung.</p>
+          <p><strong>„Das muss ich selbst bezahlen, wenn die Pflegekasse das nicht übernimmt."</strong> – Nicht unbedingt. Viele Leistungen, die nicht zur Pflegekasse gehören, werden von der Krankenkasse getragen. Es lohnt sich, beide Wege zu prüfen.</p>
+          <p><strong>„Das ist zu kompliziert, das mache ich lieber selbst."</strong> – Das Gegenteil trifft zu: Ein zugelassener Pflegedienst übernimmt die gesamte Abrechnung mit beiden Kassen. Für Sie entsteht kein administrativer Aufwand.</p>
+
+          <h2 id="was-bedeutet-das">Was das konkret für Sie bedeutet</h2>
+          <p>Bevor Sie entscheiden, was Sie selbst zahlen müssen – und was nicht – lohnt sich ein Gespräch. Im ersten Termin bei uns schauen wir gemeinsam: Welcher Pflegegrad liegt vor? Was hat der Hausarzt verordnet – oder was könnte er verordnen? Wie kombinieren wir Grundpflege und Behandlungspflege so, dass der Eigenanteil möglichst gering bleibt?</p>
+          <p>Viele Familien entdecken dabei Leistungen, die sie jahrelang ungenutzt gelassen haben. Das muss nicht sein.</p>
+
+          <h2 id="fazit">Fazit auf einen Blick</h2>
+          <ul>
+            <li><strong>Grundpflege</strong> = Alltag (Körperpflege, Mobilisation) → Pflegekasse, SGB XI, ab Pflegegrad 2</li>
+            <li><strong>Behandlungspflege</strong> = Medizin (Injektionen, Wunden) → Krankenkasse, SGB V, kein Pflegegrad nötig</li>
+            <li>Beides gleichzeitig ist möglich und oft sinnvoll</li>
+            <li>Für Sie entsteht kein Verwaltungsaufwand – der Pflegedienst rechnet direkt ab</li>
+            <li>Viele Leistungen werden verschenkt, weil die zweite Kasse unbekannt bleibt</li>
+          </ul>
 
           <div class="blog-cta-box">
             <h2>Wir erklären Ihnen, was möglich ist – persönlich und kostenlos.</h2>
@@ -113,6 +148,22 @@
           </div>
 
         </div>
+
+        <aside class="blog-toc" aria-label="Inhaltsverzeichnis">
+          <p class="blog-toc-title">Inhalt</p>
+          <nav>
+            <ol>
+              <li><a href="#grundpflege">Grundpflege (SGB XI)</a></li>
+              <li><a href="#behandlungspflege">Behandlungspflege (SGB V)</a></li>
+              <li><a href="#beide-gleichzeitig">Beides gleichzeitig?</a></li>
+              <li><a href="#beispiel">Beispiel aus der Praxis</a></li>
+              <li><a href="#irrtümer">Häufige Missverständnisse</a></li>
+              <li><a href="#was-bedeutet-das">Was das für Sie bedeutet</a></li>
+              <li><a href="#fazit">Fazit</a></li>
+            </ol>
+          </nav>
+        </aside>
+
       </div>
     </article>
   </main>
@@ -128,5 +179,6 @@
       </div>
     </div>
   </footer>
+  <script src="../main.js" defer></script>
 </body>
 </html>
