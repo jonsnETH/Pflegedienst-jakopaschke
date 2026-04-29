@@ -192,7 +192,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preload" as="image" href="img/team-car.jpg">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap"></noscript>
 
   <!-- Skip intro for returning visitors (runs before render to prevent flash) -->
   <script>if(sessionStorage.getItem('pfj-intro'))document.documentElement.classList.add('skip-intro');</script>
@@ -506,7 +507,10 @@
         <div class="ablauf-split">
 
           <div class="ablauf-image reveal">
-            <img src="img/desk.jpg" alt="Beratungsgespräch bei Pflegedienst Jakopaschke²" loading="lazy">
+            <picture>
+              <source srcset="img/desk.webp" type="image/webp">
+              <img src="img/desk.jpg" alt="Beratungsgespräch bei Pflegedienst Jakopaschke²" loading="lazy">
+            </picture>
           </div>
 
           <div class="steps-list">
@@ -566,7 +570,10 @@
 
           <!-- Right: team photo + stats -->
           <div class="trust-right reveal reveal-delay-2">
-            <img class="trust-team-photo" src="img/team.jpg" alt="Das Team von Pflegedienst Jakopaschke² in Ludwigsfelde" loading="lazy">
+            <picture>
+              <source srcset="img/team.webp" type="image/webp">
+              <img class="trust-team-photo" src="img/team.jpg" alt="Das Team von Pflegedienst Jakopaschke² in Ludwigsfelde" loading="lazy">
+            </picture>
             <div class="trust-stats">
               <div class="trust-stat">
                 <p class="trust-stat__number">Seit</p>
@@ -830,7 +837,10 @@
         </div>
 
         <div class="contact-banner reveal">
-          <img src="img/balcony.jpg" alt="Team Pflegedienst Jakopaschke² am Standort in Ludwigsfelde" loading="lazy">
+          <picture>
+            <source srcset="img/balcony.webp" type="image/webp">
+            <img src="img/balcony.jpg" alt="Team Pflegedienst Jakopaschke² am Standort in Ludwigsfelde" loading="lazy">
+          </picture>
         </div>
 
       </div>
