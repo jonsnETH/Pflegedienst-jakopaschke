@@ -89,9 +89,9 @@
     wmBottom.style.opacity = 0; wmBottom.style.filter = 'blur(8px)'; wmBottom.style.transform = 'translateX(10px)';
 
     // One-shot animation: maps elapsed ms to progress 0-100, capped at 60
-    const BUILD_MS   = 2800;
-    const TAGLINE_MS = 700;
-    const HOLD_MS    = 800;
+    const BUILD_MS   = 1800;
+    const TAGLINE_MS = 600;
+    const HOLD_MS    = 400;
     let startTime = null;
     let phase = 'build'; // 'build' | 'tagline' | 'hold'
     const taglineEl = intro.querySelector('.intro-tagline');
@@ -222,6 +222,18 @@
       });
     }, { rootMargin: '-80px 0px -60% 0px' });
     headings.forEach(h => { if (h) observer.observe(h); });
+  }
+
+  // ── Reviews carousel ─────────────────────────────────────────
+  const carousel = document.getElementById('reviewsCarousel');
+  if (carousel) {
+    const getScrollAmount = () => carousel.querySelector('.review-card').offsetWidth + 16;
+    document.querySelector('.reviews-nav--prev')?.addEventListener('click', () => {
+      carousel.scrollBy({ left: -getScrollAmount(), behavior: 'smooth' });
+    });
+    document.querySelector('.reviews-nav--next')?.addEventListener('click', () => {
+      carousel.scrollBy({ left: getScrollAmount(), behavior: 'smooth' });
+    });
   }
 
 })();
