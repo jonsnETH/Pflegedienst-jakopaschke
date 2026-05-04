@@ -47,6 +47,41 @@ const articles = [
     prompt:
       'A caring female caregiver warmly greeting an elderly couple at the front door of a modest German single-family home. Sunny day, green garden visible. Trust and warmth conveyed. No text. Photorealistic documentary style.',
   },
+  {
+    slug: 'ambulante-pflege-schnell-starten-ablauf',
+    prompt:
+      'A professional female nurse in scrubs having a warm first consultation with a German family at their kitchen table. Paperwork and a cup of coffee on the table. Natural light, calm and trustworthy atmosphere. No text. Photorealistic documentary style.',
+  },
+  {
+    slug: 'pflege-zuhause-flaeming-alternativen-pflegeheim',
+    prompt:
+      'An elderly German man sitting comfortably in his own living room armchair, looking out at a green Brandenburg countryside garden through a large window. Warm afternoon light, sense of independence and peace. No text. Photorealistic editorial style.',
+  },
+  {
+    slug: 'pflegegrad-2-beantragen',
+    prompt:
+      'A middle-aged German woman helping her elderly mother fill out official paperwork at a dining room table. Documents spread out, reading glasses, a cup of tea nearby. Supportive and calm mood. No text. Photorealistic documentary style.',
+  },
+  {
+    slug: 'demenz-zuhause-betreuen-ambulante-pflege',
+    prompt:
+      'A compassionate female caregiver sitting close to an elderly woman with dementia in a cozy German living room, holding her hand and speaking gently. Warm, safe atmosphere. No text. Photorealistic editorial photography style.',
+  },
+  {
+    slug: 'pflegedienst-wechseln-wie-geht-das',
+    prompt:
+      'An adult son and daughter sitting with their elderly father at a dining table, having a calm conversation about care options. Documents on the table. Bright, modern German home interior. No text. Photorealistic documentary style.',
+  },
+  {
+    slug: 'verhinderungspflege-anspruch-erklaert',
+    prompt:
+      'A tired but relieved middle-aged German woman being greeted at the door by a professional caregiver who is arriving to take over care duties. Sense of relief and support. Suburban German home exterior. No text. Photorealistic editorial style.',
+  },
+  {
+    slug: 'pflegende-angehoerige-entlasten-betreuungsleistungen',
+    prompt:
+      'A warm scene of a professional caregiver and an adult daughter both supporting an elderly woman in a bright German home. The daughter looks relieved. Sense of partnership and trust. No text. Photorealistic documentary photography style.',
+  },
 ];
 
 function callImagen(prompt) {
